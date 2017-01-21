@@ -69,7 +69,8 @@
 @media (min-width: 560px) and (max-width: 970px) {
 	.team {
 		.flex-box {
-			.col-1, .col-3, {margin-right: 35px;}
+			width: 400px;
+			margin: 0 auto;
 		}
 	}
 }
@@ -91,5 +92,26 @@
 	}
 }
 //==================TEAM the END===========================================//
+//
+//
+//==================NEWS===========================================//
+@media (min-width: 820px) and (max-width: 1250px) {
+	.news {
+		.flex-box {
+			width: 340px;
+			margin: 55px auto 0 auto;
+			justify-content: space-around;
+		}
+	}
+}
+@media (min-width: 1250px) and (max-width: 2880px) {
+	.news {
+		.flex-box {
+			justify-content: center;
+			.col-1, .col-2 {margin-right: 35px;}
+		}
+	}
+}
+//==================NEWS the END===========================================//
 //
 //

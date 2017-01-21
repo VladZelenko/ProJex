@@ -274,7 +274,6 @@ h2.title {
     max-width: 270px;
     height: auto; }
   .team h3, .team span, .team p {
-    color: #000000;
     font: 700 24px "Quicksand", sans-serif; }
   .team span {
     font: 300 16px "Quicksand", sans-serif; }
@@ -288,19 +287,24 @@ h2.title {
 
 .news {
   width: 100%;
-  min-height: 730px;
   background: #ff5959; }
   .news .title {
     color: #ffffff; }
   .news .flex-box {
+    min-height: 730px;
     margin-top: 55px;
     display: flex;
-    justify-content: space-between; }
-    .news .flex-box .col-1,
-    .news .flex-box .col-2 {
-      margin-right: 30px; }
+    flex-flow: row wrap;
+    justify-content: center; }
+    .news .flex-box .col-1, .news .flex-box .col-2 {
+      margin-bottom: 50px; }
+    .news .flex-box .col-1, .news .flex-box .col-2, .news .flex-box .col-3 {
+      max-width: 370px;
+      min-width: 300px;
+      width: 100%;
+      height: auto; }
   .news img {
-    width: 370px;
+    max-width: 370px;
     height: auto; }
   .news h3, .news .services p, .services .news p, .news .team span, .team .news span, .news .team p, .team .news p {
     color: #ffffff;
@@ -314,10 +318,11 @@ h2.title {
     font: 300 13px "Quicksand", sans-serif; }
   .news ul li {
     padding-right: 40px;
-    display: inline-block;
-    color: #ffffff; }
+    display: inline-block; }
   .news ul .fa {
     padding-right: 15px; }
+  .news ul a {
+    color: #ffffff; }
 
 .contact {
   width: 100%;
@@ -427,8 +432,9 @@ h2.title {
     margin-right: 50px; } }
 
 @media (min-width: 560px) and (max-width: 970px) {
-  .team .flex-box .col-1, .team .flex-box .col-3 {
-    margin-right: 35px; } }
+  .team .flex-box {
+    width: 400px;
+    margin: 0 auto; } }
 
 @media (min-width: 970px) and (max-width: 1360px) {
   .team .flex-box {
@@ -440,4 +446,16 @@ h2.title {
   .team .flex-box {
     justify-content: center; }
     .team .flex-box .col-1, .team .flex-box .col-2, .team .flex-box .col-3 {
+      margin-right: 35px; } }
+
+@media (min-width: 820px) and (max-width: 1250px) {
+  .news .flex-box {
+    width: 340px;
+    margin: 55px auto 0 auto;
+    justify-content: space-around; } }
+
+@media (min-width: 1250px) and (max-width: 2880px) {
+  .news .flex-box {
+    justify-content: center; }
+    .news .flex-box .col-1, .news .flex-box .col-2 {
       margin-right: 35px; } }

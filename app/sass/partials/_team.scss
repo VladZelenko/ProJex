@@ -37,10 +37,7 @@
 		max-width: 270px;
 		height: auto;
 	}
-	h3 {
-		color: $primary_font_color;
-		font: 700 24px $primary_font;
-	}
+	h3 {font: 700 24px $primary_font;}
 	span {
 		@extend h3;
 		font: 300 16px $primary_font;

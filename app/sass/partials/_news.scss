@@ -1,24 +1,25 @@
 .news {
 	width: 100%;
-	min-height: 730px;
 	background:  $origin_font_color;
 
 	.title {color: $secondary_font_color;}
-
 	.flex-box {
+		min-height: 730px;
 		margin-top: 55px;
 		display: flex;
-		justify-content: space-between;
+		flex-flow: row wrap;
+		justify-content: center;
 
-		.col-1,
-		.col-2 {
-			margin-right: 30px;
+		.col-1, .col-2 {margin-bottom: 50px;}
+		.col-1, .col-2, .col-3 {
+			max-width: 370px;
+			min-width: 300px;
+			width: 100%;
+			height: auto;
 		}
 	}
-
-
 	img {
-		width: 370px;
+		max-width: 370px;
 		height: auto;
 	}
 	h3 {
@@ -38,10 +39,8 @@
 		li {
 			padding-right: 40px;
 			display: inline-block;
-			color: $secondary_font_color;
 		}
-		.fa {
-			padding-right: 15px;
-		}
+		.fa {padding-right: 15px;}
+		a {color: $secondary_font_color;}
 	}
 }
