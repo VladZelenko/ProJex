@@ -74,43 +74,6 @@ img {
     width: 75%;
     margin: 0 auto; } }
 
-@media (min-width: 320px) and (max-width: 970px) {
-  .nav {
-    display: none; }
-    .nav li a {
-      background: #ffffff;
-      border-top: 1px solid #eee;
-      color: #000000; }
-      .nav li a:hover {
-        color: #ffffff;
-        border-left: 3px solid #ff5959;
-        border-radius: none; }
-  .nav li:first-child a {
-    border-top: none; }
-  #touch-menu {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 20px;
-    text-decoration: none; }
-    #touch-menu .fa-bars {
-      font-size: 22px; } }
-
-@media (min-width: 375px) and (max-width: 970px) {
-  .hero .flex-box .col-1 ul {
-    justify-content: space-around; } }
-
-@media (min-width: 970px) and (max-width: 2880px) {
-  .hero .flex-box .col-1 {
-    order: 1;
-    margin-right: 20px;
-    text-align: left; }
-    .hero .flex-box .col-1 ul {
-      justify-content: flex-start; }
-    .hero .flex-box .col-1 li {
-      margin-right: 20px; }
-  .hero .flex-box .col-2 {
-    order: 2; } }
-
 body {
   color: #000000;
   font: 300 13px "Quicksand", sans-serif; }
@@ -393,3 +356,40 @@ h2.title {
     color: #ff5959;
     transition: all .4s ease-in-out;
     border: 3px solid #ff5959; }
+
+@media (min-width: 320px) and (max-width: 970px) {
+  .nav {
+    display: none; }
+    .nav li a {
+      background: #ffffff;
+      border-top: 1px solid #eee;
+      color: #000000; }
+      .nav li a:hover {
+        color: #ffffff;
+        border-left: 3px solid #ff5959;
+        border-radius: none; }
+  .nav li:first-child a {
+    border-top: none; }
+  #touch-menu {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    text-decoration: none; }
+    #touch-menu .fa-bars {
+      font-size: 22px; } }
+
+@media (min-width: 375px) and (max-width: 970px) {
+  .hero .flex-box .col-1 ul {
+    justify-content: space-around; } }
+
+@media (min-width: 970px) and (max-width: 2880px) {
+  .hero .flex-box .col-1 {
+    order: 1;
+    margin-right: 20px;
+    text-align: left; }
+    .hero .flex-box .col-1 ul {
+      justify-content: flex-start; }
+    .hero .flex-box .col-1 li {
+      margin-right: 20px; }
+  .hero .flex-box .col-2 {
+    order: 2; } }
