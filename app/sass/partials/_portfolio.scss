@@ -1,0 +1,68 @@
+.portfolio {
+	width: 100%;
+	min-height: 905px;
+	background: $origin_font_color;
+
+	.title {color: $secondary_font_color;}
+
+	.flex-box-1 {
+		margin-top: 55px;
+		width: 1170px;
+		display: flex;
+		justify-content: space-between;
+
+		.col-1, .col-2 {
+			position: relative;
+			width: 570px;
+			height: auto;
+
+			&:hover .overlay {
+				display: block;
+			// transition: all .4s ease-in-out;
+		}
+
+		.overlay {
+			display: none;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: $origin_font_color;
+			opacity: .6;
+
+			h3 {
+				color: $secondary_font_color;
+				font: 700 24px $primary_font;
+			}
+			.overlay-caption {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-flow: row no-wrap;
+				a {
+					display: block;
+					width: 30px;
+					height: 30px;
+					border-radius: 10px;
+					background: $origin_font_color;
+				}			
+			}
+
+		}
+	}
+
+	img {
+		width: 570px;
+		height: auto;
+	}
+}
+.flex-box-2 {
+	@extend .flex-box-1;
+
+	img {
+		width: 270px;
+		height: 285px;
+	}
+}
+}

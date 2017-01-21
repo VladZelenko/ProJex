@@ -1,0 +1,42 @@
+.team {
+	width: 100%;
+	min-height: 755px;
+	background: #e8e8e8;
+
+	.flex-box {
+		margin-top: 55px;
+		display: flex;
+		justify-content: space-between;
+		text-align: center;
+
+		.col-1,
+		.col-2,
+		.col-3 {
+			margin-right: 35px;
+		}
+	}
+
+	img {
+		margin-bottom: 15px;
+		width: 270px;
+		height: auto;
+	}
+	h3 {
+		color: $primary_font_color;
+		font: 700 24px $primary_font;
+	}
+	span {
+		@extend h3;
+		font: 300 16px $primary_font;
+	}
+	p {
+		@extend h3;
+		padding: 20px 0 10px 0;
+		font: 300 13px $primary_font;
+	}
+	.social-list {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+	}
+}

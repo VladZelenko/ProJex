@@ -1,0 +1,30 @@
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+section {padding: 100px 0;}
+li {list-style: none;}
+a {text-decoration: none;}
+a:hover {text-decoration: none;}
+img {
+	width: 100%;
+	height: auto;
+}
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+@media (min-width: 1360px) {
+	.container {
+	width: 85%;
+	margin: 0 auto;
+}
+}
+
+@media (min-width: 1560px) {
+	.container {
+	width: 75%;
+	margin: 0 auto;
+}
+}
+
