@@ -1,47 +1,38 @@
 .contact {
 	width: 100%;
-	min-height: 555px;
 	background: #e8e8e8;
 
 	.flex-box {
+		min-height: 555px;
 		margin-top: 55px;
 		display: flex;
+		flex-flow: row wrap;
 		justify-content: center;
 
 		.col-1 {margin-right: 35px;}
-
-		h3 {
-			color: $primary_font_color;
-			font: 400 24px $primary_font;
+		.col-1, .col-2 {
+			max-width: 570px;
+			min-width: 300px;
+			width: 100%;
+			margin: 0 auto;
+			height: auto;
 		}
+		h3 {font: 400 24px $primary_font;}
 		p {
 			padding: 20px 0;
-			color: $primary_font_color;
 			font: 300 13px $primary_font;
 		}
-		.location {
-			color: $primary_font_color;
-			font: 300 13px/28px $primary_font;
-		}
-		.box-btn {
-			margin-top: 45px;
-			display: flex;
-			justify-content: flex-start;
-
-			a {margin-right: 35px;}
-		}
 	}
-	.contact-form {
-		input, textarea {
-			width: 565px;
-			padding: 15px;
-			resize: none;
-			outline: none;
-			border:  none;
-			border-radius: 9px;
-		}
-
-		.form-item {margin: 15px 0;}
+	.location {
+		font: 300 13px/28px $primary_font;
+		a {color: $primary_font_color;}
 	}
+	.box-btn {
+		margin-top: 45px;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
 
+		a {margin-bottom: 15px;}
+	}
 }

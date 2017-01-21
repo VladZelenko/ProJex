@@ -326,39 +326,37 @@ h2.title {
 
 .contact {
   width: 100%;
-  min-height: 555px;
   background: #e8e8e8; }
   .contact .flex-box {
+    min-height: 555px;
     margin-top: 55px;
     display: flex;
+    flex-flow: row wrap;
     justify-content: center; }
     .contact .flex-box .col-1 {
       margin-right: 35px; }
+    .contact .flex-box .col-1, .contact .flex-box .col-2 {
+      max-width: 570px;
+      min-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+      height: auto; }
     .contact .flex-box h3, .contact .flex-box .services p, .services .contact .flex-box p, .contact .flex-box .team span, .team .contact .flex-box span, .contact .flex-box .team p, .team .contact .flex-box p {
-      color: #000000;
       font: 400 24px "Quicksand", sans-serif; }
     .contact .flex-box p {
       padding: 20px 0;
-      color: #000000;
       font: 300 13px "Quicksand", sans-serif; }
-    .contact .flex-box .location {
-      color: #000000;
-      font: 300 13px/28px "Quicksand", sans-serif; }
-    .contact .flex-box .box-btn {
-      margin-top: 45px;
-      display: flex;
-      justify-content: flex-start; }
-      .contact .flex-box .box-btn a {
-        margin-right: 35px; }
-  .contact .contact-form input, .contact .contact-form textarea {
-    width: 565px;
-    padding: 15px;
-    resize: none;
-    outline: none;
-    border: none;
-    border-radius: 9px; }
-  .contact .contact-form .form-item {
-    margin: 15px 0; }
+  .contact .location {
+    font: 300 13px/28px "Quicksand", sans-serif; }
+    .contact .location a {
+      color: #000000; }
+  .contact .box-btn {
+    margin-top: 45px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; }
+    .contact .box-btn a {
+      margin-bottom: 15px; }
 
 .footer {
   width: 100%;
@@ -389,6 +387,19 @@ h2.title {
     color: #ff5959;
     transition: all .4s ease-in-out;
     border: 3px solid #ff5959; }
+
+.contact-form input, .contact-form textarea {
+  max-width: 565px;
+  min-width: 300px;
+  width: 100%;
+  padding: 15px;
+  resize: none;
+  outline: none;
+  border: none;
+  border-radius: 9px; }
+
+.contact-form .form-item {
+  margin: 15px 0; }
 
 @media (min-width: 320px) and (max-width: 970px) {
   .nav {
