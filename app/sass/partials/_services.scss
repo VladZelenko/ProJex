@@ -4,13 +4,17 @@
 	min-height: 550px;
 
 	.flex-box {
+		min-height: 550px;
 		display: flex;
-		justify-content: flex-between;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: center;
 		text-align: center;
 
 		.col-1, .col-2, .col-3 {
-			min-width: 350px;
-			margin-right: 50px;
+			max-width: 350px;
+			min-width: 300px;
+			width: 100%;
 		}
 		.col-3 {margin-right: 0;}
 	}

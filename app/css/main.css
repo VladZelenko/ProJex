@@ -66,7 +66,7 @@ img {
 
 @media (min-width: 1360px) {
   .container {
-    width: 85%;
+    width: 90%;
     margin: 0 auto; } }
 
 @media (min-width: 1560px) {
@@ -157,12 +157,16 @@ header {
   width: 100%;
   min-height: 550px; }
   .services .flex-box {
+    min-height: 550px;
     display: flex;
-    justify-content: flex-between;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
     text-align: center; }
     .services .flex-box .col-1, .services .flex-box .col-2, .services .flex-box .col-3 {
-      min-width: 350px;
-      margin-right: 50px; }
+      max-width: 350px;
+      min-width: 300px;
+      width: 100%; }
     .services .flex-box .col-3 {
       margin-right: 0; }
   .services img {
@@ -393,3 +397,7 @@ h2.title {
       margin-right: 20px; }
   .hero .flex-box .col-2 {
     order: 2; } }
+
+@media (min-width: 750px) and (max-width: 2880px) {
+  .services .flex-box .col-1, .services .flex-box .col-2 {
+    margin-right: 50px; } }
