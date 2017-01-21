@@ -1,15 +1,19 @@
+// переробити все одним флексбоксом
+
 .portfolio {
 	width: 100%;
 	min-height: 905px;
 	background: $origin_font_color;
 
 	.title {color: $secondary_font_color;}
-
 	.flex-box-1 {
-		margin-top: 55px;
-		width: 1170px;
+		// margin-top: 55px;
+		// width: 1170px;
+		height: 905px;
 		display: flex;
-		justify-content: space-between;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-content: flex-start;
 
 		.col-1, .col-2 {
 			position: relative;
@@ -20,7 +24,6 @@
 				display: block;
 			// transition: all .4s ease-in-out;
 		}
-
 		.overlay {
 			display: none;
 			position: absolute;
@@ -46,14 +49,13 @@
 					height: 30px;
 					border-radius: 10px;
 					background: $origin_font_color;
-				}			
+				}
 			}
-
 		}
 	}
-
 	img {
-		width: 570px;
+		max-width: 570px;
+		min-width: 300px;
 		height: auto;
 	}
 }
@@ -61,8 +63,9 @@
 	@extend .flex-box-1;
 
 	img {
-		width: 270px;
-		height: 285px;
+		max-width: 270px;
+		min-width: 300px;
+		height: auto;
 	}
 }
 }

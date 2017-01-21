@@ -1,24 +1,40 @@
 .team {
 	width: 100%;
-	min-height: 755px;
 	background: #e8e8e8;
 
 	.flex-box {
 		margin-top: 55px;
+		min-height: 755px;
 		display: flex;
-		justify-content: space-between;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: center;
 		text-align: center;
 
-		.col-1,
-		.col-2,
-		.col-3 {
-			margin-right: 35px;
-		}
-	}
+		.col-1, .col-2, .col-3, .col-4 {
+			width: 270px;
+			margin-bottom: 40px;
 
+			.fa {
+				width: 30px;
+				height: 30px;
+				padding: 10px 15px 15px 10px;
+				margin-right: 5px;
+				border-radius: 50%;
+				color: $secondary_font_color;
+				font-size: 12px;
+			}
+			.fa-twitter {background: #7acdf1;}
+			.fa-pinterest {background: #eb5756;}
+			.fa-facebook {background: #547bbd;}
+			.fa-google-plus {background: #4c4c4c;}
+			.fa-linkedin {background: #1385c8;}
+		}
+		.col-4 {margin-right: 0;}
+	}
 	img {
 		margin-bottom: 15px;
-		width: 270px;
+		max-width: 270px;
 		height: auto;
 	}
 	h3 {

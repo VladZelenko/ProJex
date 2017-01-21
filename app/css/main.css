@@ -192,10 +192,11 @@ h2.title {
   .portfolio .title {
     color: #ffffff; }
   .portfolio .flex-box-1, .portfolio .flex-box-2 {
-    margin-top: 55px;
-    width: 1170px;
+    height: 905px;
     display: flex;
-    justify-content: space-between; }
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: flex-start; }
     .portfolio .flex-box-1 .col-1, .portfolio .flex-box-2 .col-1, .portfolio .flex-box-1 .col-2, .portfolio .flex-box-2 .col-2 {
       position: relative;
       width: 570px;
@@ -226,28 +227,51 @@ h2.title {
             border-radius: 10px;
             background: #ff5959; }
     .portfolio .flex-box-1 img, .portfolio .flex-box-2 img {
-      width: 570px;
+      max-width: 570px;
+      min-width: 300px;
       height: auto; }
   .portfolio .flex-box-2 img {
-    width: 270px;
-    height: 285px; }
+    max-width: 270px;
+    min-width: 300px;
+    height: auto; }
 
 .team {
   width: 100%;
-  min-height: 755px;
   background: #e8e8e8; }
   .team .flex-box {
     margin-top: 55px;
+    min-height: 755px;
     display: flex;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
     text-align: center; }
-    .team .flex-box .col-1,
-    .team .flex-box .col-2,
-    .team .flex-box .col-3 {
-      margin-right: 35px; }
+    .team .flex-box .col-1, .team .flex-box .col-2, .team .flex-box .col-3, .team .flex-box .col-4 {
+      width: 270px;
+      margin-bottom: 40px; }
+      .team .flex-box .col-1 .fa, .team .flex-box .col-2 .fa, .team .flex-box .col-3 .fa, .team .flex-box .col-4 .fa {
+        width: 30px;
+        height: 30px;
+        padding: 10px 15px 15px 10px;
+        margin-right: 5px;
+        border-radius: 50%;
+        color: #ffffff;
+        font-size: 12px; }
+      .team .flex-box .col-1 .fa-twitter, .team .flex-box .col-2 .fa-twitter, .team .flex-box .col-3 .fa-twitter, .team .flex-box .col-4 .fa-twitter {
+        background: #7acdf1; }
+      .team .flex-box .col-1 .fa-pinterest, .team .flex-box .col-2 .fa-pinterest, .team .flex-box .col-3 .fa-pinterest, .team .flex-box .col-4 .fa-pinterest {
+        background: #eb5756; }
+      .team .flex-box .col-1 .fa-facebook, .team .flex-box .col-2 .fa-facebook, .team .flex-box .col-3 .fa-facebook, .team .flex-box .col-4 .fa-facebook {
+        background: #547bbd; }
+      .team .flex-box .col-1 .fa-google-plus, .team .flex-box .col-2 .fa-google-plus, .team .flex-box .col-3 .fa-google-plus, .team .flex-box .col-4 .fa-google-plus {
+        background: #4c4c4c; }
+      .team .flex-box .col-1 .fa-linkedin, .team .flex-box .col-2 .fa-linkedin, .team .flex-box .col-3 .fa-linkedin, .team .flex-box .col-4 .fa-linkedin {
+        background: #1385c8; }
+    .team .flex-box .col-4 {
+      margin-right: 0; }
   .team img {
     margin-bottom: 15px;
-    width: 270px;
+    max-width: 270px;
     height: auto; }
   .team h3, .team span, .team p {
     color: #000000;
@@ -401,3 +425,19 @@ h2.title {
 @media (min-width: 750px) and (max-width: 2880px) {
   .services .flex-box .col-1, .services .flex-box .col-2 {
     margin-right: 50px; } }
+
+@media (min-width: 560px) and (max-width: 970px) {
+  .team .flex-box .col-1, .team .flex-box .col-3 {
+    margin-right: 35px; } }
+
+@media (min-width: 970px) and (max-width: 1360px) {
+  .team .flex-box {
+    width: 700px;
+    margin: 55px auto 0 auto;
+    justify-content: space-around; } }
+
+@media (min-width: 1360px) and (max-width: 2880px) {
+  .team .flex-box {
+    justify-content: center; }
+    .team .flex-box .col-1, .team .flex-box .col-2, .team .flex-box .col-3 {
+      margin-right: 35px; } }

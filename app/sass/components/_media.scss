@@ -43,9 +43,8 @@
 				order: 1;
 				margin-right: 20px;
 				text-align: left;
-				ul {
-					justify-content: flex-start;
-				}
+
+				ul {justify-content: flex-start;}
 				li {margin-right: 20px;}
 			}
 			.col-2 {order: 2;}
@@ -53,7 +52,6 @@
 	}
 }
 //==================HERO the END===========================================//
-//
 //
 //
 //==================SERVICES===========================================//
@@ -64,7 +62,34 @@
 		}
 	}
 }
-//==================HERO the END===========================================//
+//==================SERVICES the END===========================================//
 //
+//
+//==================TEAM===========================================//
+@media (min-width: 560px) and (max-width: 970px) {
+	.team {
+		.flex-box {
+			.col-1, .col-3, {margin-right: 35px;}
+		}
+	}
+}
+@media (min-width: 970px) and (max-width: 1360px) {
+	.team {
+		.flex-box {
+			width: 700px;
+			margin: 55px auto 0 auto;
+			justify-content: space-around;
+		}
+	}
+}
+@media (min-width: 1360px) and (max-width: 2880px) {
+	.team {
+		.flex-box {
+			justify-content: center;
+			.col-1, .col-2, .col-3 {margin-right: 35px;}
+		}
+	}
+}
+//==================TEAM the END===========================================//
 //
 //
