@@ -129,9 +129,7 @@ header {
     align-items: center; }
     .hero .flex-box .col-1 {
       order: 2;
-      max-width: 450px;
-      min-width: 320px;
-      width: 100%;
+      flex: 0 1 450px;
       text-align: center; }
       .hero .flex-box .col-1 h2 {
         color: #000000;
@@ -140,12 +138,6 @@ header {
         padding: 30px 0;
         color: #000000;
         font: 400 13px "Quicksand", sans-serif; }
-      .hero .flex-box .col-1 ul {
-        min-height: 110px;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center; }
     .hero .flex-box .col-2 {
       order: 1; }
       .hero .flex-box .col-2 img {
@@ -164,11 +156,7 @@ header {
     align-items: center;
     text-align: center; }
     .services .flex-box .col-1, .services .flex-box .col-2, .services .flex-box .col-3 {
-      max-width: 350px;
-      min-width: 300px;
-      width: 100%; }
-    .services .flex-box .col-3 {
-      margin-right: 0; }
+      flex: 0 1 350px; }
   .services img {
     margin: 55px 0 15px 0;
     width: 120px;
@@ -299,9 +287,7 @@ h2.title {
     .news .flex-box .col-1, .news .flex-box .col-2 {
       margin-bottom: 50px; }
     .news .flex-box .col-1, .news .flex-box .col-2, .news .flex-box .col-3 {
-      max-width: 370px;
-      min-width: 300px;
-      width: 100%;
+      flex: 0 1 370px;
       height: auto; }
   .news img {
     max-width: 370px;
@@ -336,9 +322,7 @@ h2.title {
     .contact .flex-box .col-1 {
       margin-right: 35px; }
     .contact .flex-box .col-1, .contact .flex-box .col-2 {
-      max-width: 570px;
-      min-width: 300px;
-      width: 100%;
+      flex: 0 1 570px;
       margin: 0 auto;
       height: auto; }
     .contact .flex-box h3, .contact .flex-box .services p, .services .contact .flex-box p, .contact .flex-box .team span, .team .contact .flex-box span, .contact .flex-box .team p, .team .contact .flex-box p {
@@ -350,13 +334,9 @@ h2.title {
     font: 300 13px/28px "Quicksand", sans-serif; }
     .contact .location a {
       color: #000000; }
-  .contact .box-btn {
-    margin-top: 45px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center; }
-    .contact .box-btn a {
-      margin-bottom: 15px; }
+    .contact .location .fa {
+      margin-right: 10px;
+      font-size: 16px; }
 
 .footer {
   width: 100%;
@@ -371,6 +351,13 @@ h2.title {
     padding-top: 50px;
     color: #ffffff;
     font: 400 13px/18px "Quicksand", sans-serif; }
+
+.box-btn {
+  min-height: 110px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center; }
 
 .primary-btn {
   display: block;
@@ -422,21 +409,21 @@ h2.title {
     #touch-menu .fa-bars {
       font-size: 22px; } }
 
-@media (min-width: 375px) and (max-width: 970px) {
-  .hero .flex-box .col-1 ul {
+@media (min-width: 375px) and (max-width: 1070px) {
+  .box-btn {
     justify-content: space-around; } }
 
-@media (min-width: 970px) and (max-width: 2880px) {
+@media (min-width: 1070px) and (max-width: 2880px) {
   .hero .flex-box .col-1 {
     order: 1;
     margin-right: 20px;
     text-align: left; }
-    .hero .flex-box .col-1 ul {
-      justify-content: flex-start; }
-    .hero .flex-box .col-1 li {
-      margin-right: 20px; }
   .hero .flex-box .col-2 {
-    order: 2; } }
+    order: 2; }
+  .box-btn {
+    justify-content: flex-start; }
+    .box-btn li {
+      margin-right: 20px; } }
 
 @media (min-width: 750px) and (max-width: 2880px) {
   .services .flex-box .col-1, .services .flex-box .col-2 {
@@ -470,3 +457,8 @@ h2.title {
     justify-content: center; }
     .news .flex-box .col-1, .news .flex-box .col-2 {
       margin-right: 35px; } }
+
+@media (min-width: 1370px) and (max-width: 2880px) {
+  .contact .flex-box {
+    width: 1170px;
+    margin: 0 auto; } }

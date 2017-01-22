@@ -11,9 +11,7 @@
 
 		.col-1 {margin-right: 35px;}
 		.col-1, .col-2 {
-			max-width: 570px;
-			min-width: 300px;
-			width: 100%;
+			flex: 0 1 570px;
 			margin: 0 auto;
 			height: auto;
 		}
@@ -26,13 +24,9 @@
 	.location {
 		font: 300 13px/28px $primary_font;
 		a {color: $primary_font_color;}
-	}
-	.box-btn {
-		margin-top: 45px;
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: center;
-
-		a {margin-bottom: 15px;}
+		.fa {
+			margin-right: 10px;
+			font-size: 16px;
+		}
 	}
 }

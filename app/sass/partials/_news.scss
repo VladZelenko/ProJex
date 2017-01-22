@@ -12,9 +12,7 @@
 
 		.col-1, .col-2 {margin-bottom: 50px;}
 		.col-1, .col-2, .col-3 {
-			max-width: 370px;
-			min-width: 300px;
-			width: 100%;
+			flex: 0 1 370px;
 			height: auto;
 		}
 	}
