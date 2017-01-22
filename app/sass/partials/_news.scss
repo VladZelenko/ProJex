@@ -5,10 +5,11 @@
 	.title {color: $secondary_font_color;}
 	.flex-box {
 		min-height: 730px;
-		margin-top: 55px;
+		// margin-top: 55px;
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: center;
+		align-items: center;
 
 		.col-1, .col-2 {margin-bottom: 50px;}
 		.col-1, .col-2, .col-3 {
