@@ -340,15 +340,14 @@ h2.title {
 
 .footer {
   width: 100%;
-  min-height: 115px;
   background: #ff5959; }
   .footer .flex-box {
+    min-height: 115px;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    text-align: center; }
   .footer span {
-    display: block;
-    padding-top: 50px;
     color: #ffffff;
     font: 400 13px/18px "Quicksand", sans-serif; }
 

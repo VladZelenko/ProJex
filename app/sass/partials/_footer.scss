@@ -1,17 +1,15 @@
 .footer {
 	width: 100%;
-	min-height: 115px;
 	background: $origin_font_color;
 
 	.flex-box {
+		min-height: 115px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		text-align: center;
 	}
-
 	span {
-		display: block;
-		padding-top: 50px;
 		color: $secondary_font_color;
 		font: 400 13px/18px $primary_font;
 	}
