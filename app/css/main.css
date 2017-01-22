@@ -74,6 +74,11 @@ img {
     width: 75%;
     margin: 0 auto; } }
 
+@media (min-width: 1920px) and (max-width: 3000px) {
+  .container {
+    width: 50%;
+    margin: 0 auto; } }
+
 body {
   color: #000000;
   font: 300 13px "Quicksand", sans-serif; }
@@ -122,7 +127,7 @@ header {
   width: 100%;
   min-height: 760px; }
   .hero .flex-box {
-    min-height: 760px;
+    margin: 255px 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -149,11 +154,10 @@ header {
   width: 100%;
   min-height: 550px; }
   .services .flex-box {
-    min-height: 550px;
+    margin-top: 55px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
     text-align: center; }
     .services .flex-box .col-1, .services .flex-box .col-2, .services .flex-box .col-3 {
       flex: 0 1 350px; }
@@ -180,11 +184,10 @@ h2.title {
   .portfolio .title {
     color: #ffffff; }
   .portfolio .flex-box-1 {
-    min-height: 290px;
+    margin-top: 55px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    align-items: center; }
+    justify-content: center; }
   .portfolio .col-1, .portfolio .col-2 {
     position: relative;
     width: 570px;
@@ -200,9 +203,27 @@ h2.title {
       width: 100%;
       height: 100%;
       background: rgba(255, 89, 89, 0.6); }
+  .portfolio .overlay-caption {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap; }
+    .portfolio .overlay-caption a {
+      display: block;
+      width: 30px;
+      height: 30px;
+      border-radius: 10px;
+      background: #ff5959;
+      text-align: center;
+      padding: 7px; }
+    .portfolio .overlay-caption .fa {
+      color: #ffffff; }
+  .portfolio h3, .portfolio .services p, .services .portfolio p, .portfolio .team span, .team .portfolio span, .portfolio .team p, .team .portfolio p {
+    color: #ffffff;
+    font: 700 24px "Quicksand", sans-serif; }
   .portfolio .flex-box-2 {
-    margin-top: 20px;
-    min-height: 500px;
+    margin-top: 65px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center; }
@@ -212,13 +233,13 @@ h2.title {
 
 .team {
   width: 100%;
+  min-height: 755px;
   background: #e8e8e8; }
   .team .flex-box {
-    min-height: 755px;
+    margin-top: 55px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
     text-align: center; }
     .team .flex-box .col-1, .team .flex-box .col-2, .team .flex-box .col-3, .team .flex-box .col-4 {
       width: 270px;
@@ -261,15 +282,15 @@ h2.title {
 
 .news {
   width: 100%;
+  min-height: 730px;
   background: #ff5959; }
   .news .title {
     color: #ffffff; }
   .news .flex-box {
-    min-height: 730px;
+    margin-top: 55px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    align-items: center; }
+    justify-content: center; }
     .news .flex-box .col-1, .news .flex-box .col-2 {
       margin-bottom: 50px; }
     .news .flex-box .col-1, .news .flex-box .col-2, .news .flex-box .col-3 {
@@ -298,18 +319,17 @@ h2.title {
 
 .contact {
   width: 100%;
+  min-height: 555px;
   background: #e8e8e8; }
   .contact .flex-box {
-    min-height: 555px;
+    margin-top: 55px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    align-items: center; }
+    justify-content: center; }
     .contact .flex-box .col-1 {
       margin-right: 35px; }
     .contact .flex-box .col-1, .contact .flex-box .col-2 {
       flex: 0 1 570px;
-      margin: 0 auto;
       height: auto; }
     .contact .flex-box h3, .contact .flex-box .services p, .services .contact .flex-box p, .contact .flex-box .team span, .team .contact .flex-box span, .contact .flex-box .team p, .team .contact .flex-box p {
       font: 400 24px "Quicksand", sans-serif; }
@@ -412,7 +432,9 @@ h2.title {
 
 @media (min-width: 750px) and (max-width: 2880px) {
   .services .flex-box .col-1, .services .flex-box .col-2 {
-    margin-right: 50px; } }
+    margin-right: 50px; }
+  .services img {
+    margin: 0; } }
 
 @media (min-width: 580px) and (max-width: 1300px) {
   .portfolio .flex-box-2 {
@@ -435,7 +457,7 @@ h2.title {
 @media (min-width: 560px) and (max-width: 970px) {
   .team .flex-box {
     width: 400px;
-    margin: 0 auto; } }
+    margin: 55px auto 0 auto; } }
 
 @media (min-width: 970px) and (max-width: 1360px) {
   .team .flex-box {
@@ -461,27 +483,22 @@ h2.title {
     .news .flex-box .col-1, .news .flex-box .col-2 {
       margin-right: 35px; } }
 
-@media (min-width: 1370px) and (max-width: 2880px) {
-  .contact .flex-box {
-    width: 1170px;
-    margin: 0 auto; } }
-
-.services .title:after, .team .title:after, .contact .title:after {
-  content: ' ';
-  display: block;
-  max-width: 380px;
-  min-width: 300px;
-  width: 100%;
-  height: 10px;
-  margin: 10px auto 0 auto;
-  background: url("../../img/delimiter.png") no-repeat; }
-
-.portfolio .title:after, .news .title:after {
-  content: ' ';
-  display: block;
-  max-width: 380px;
-  min-width: 300px;
-  width: 100%;
-  height: 10px;
-  margin: 10px auto 0 auto;
-  background: url("../../img/top-delimiter-white.png") no-repeat; }
+@media (min-width: 400px) {
+  .services .title:after, .team .title:after, .contact .title:after {
+    content: ' ';
+    display: block;
+    max-width: 380px;
+    min-width: 300px;
+    width: 100%;
+    height: 10px;
+    margin: 10px auto 0 auto;
+    background: url("../../img/delimiter.png") no-repeat; }
+  .portfolio .title:after, .news .title:after {
+    content: ' ';
+    display: block;
+    max-width: 380px;
+    min-width: 300px;
+    width: 100%;
+    height: 10px;
+    margin: 10px auto 0 auto;
+    background: url("../../img/top-delimiter-white.png") no-repeat; } }

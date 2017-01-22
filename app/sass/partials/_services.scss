@@ -4,11 +4,10 @@
 	min-height: 550px;
 
 	.flex-box {
-		min-height: 550px;
+		margin-top: 55px;
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: center;
-		align-items: center;
 		text-align: center;
 
 		.col-1, .col-2, .col-3 {flex: 0 1 350px;}

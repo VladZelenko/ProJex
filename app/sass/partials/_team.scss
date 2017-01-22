@@ -1,14 +1,13 @@
 .team {
 	width: 100%;
+	min-height: 755px;
 	background: #e8e8e8;
 
 	.flex-box {
-		// margin-top: 55px;
-		min-height: 755px;
+		margin-top: 55px;
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: center;
-		align-items: center;
 		text-align: center;
 
 		.col-1, .col-2, .col-3, .col-4 {

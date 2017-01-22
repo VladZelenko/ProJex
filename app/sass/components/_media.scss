@@ -55,6 +55,7 @@
 		.flex-box {
 			.col-1, .col-2 {margin-right: 50px;}
 		}
+		img {margin: 0;}
 	}
 }
 //==================SERVICES the END===========================================//
@@ -92,7 +93,7 @@
 	.team {
 		.flex-box {
 			width: 400px;
-			margin: 0 auto;
+			margin: 55px auto 0 auto;
 		}
 	}
 }
@@ -135,17 +136,3 @@
 	}
 }
 //==================NEWS the END===========================================//
-//
-//
-//==================CONTACT US===========================================//
-@media (min-width: 1370px) and (max-width: 2880px) {
-	.contact {
-		.flex-box {
-			width: 1170px;//чому якщо прибрати розмір контейнера, вміст контейнера не вирівнюється по центру, а розтягується як при justify-content: space-around.?
-			margin: 0 auto;//хоча вище стоїть justify-content: center;
-		}
-	}
-}
-//==================CONTACT US the END===========================================//
-//
-//
